@@ -1,0 +1,73 @@
+#Append file.py..
+file = open("Text.txt","a")
+file.write("1st Year")
+file.close()
+file1 = open("Text.txt","r")
+print(file1.read())
+ 
+#Copy file.py..
+shutil.copy('Text.txt', 'Text-copy.txt')
+file=open("Text-copy.txt")
+print(file.read())
+
+#Count lines in file.py..
+file=open("Text.txt")
+count=0
+for line in file:
+    count=count+1
+print("Lines=",count)
+
+#Read file.py..
+file = open("Text.txt")
+print(file.read())
+
+#Read first N lines.py..
+file = open("Text.txt")
+print(file.readline())
+print(file.readline())
+print(file.readline())
+
+
+#Read last lines.py..
+file=open("Text.txt")
+for line in (file.readlines() [-3:]):
+    print(line)
+
+
+#Size plain text.py..
+import os
+size=os.path.getsize("Text.txt")
+print("Size Of Text,txt File In Bytes Is=",size)
+
+
+#Store line array.py..
+file = open("Text.txt")
+a=[]
+for line in file:
+    a.append(line)
+print(a)
+
+#Store line list.py..
+file = open("Text.txt")
+a=file.readlines()
+print(a)
+
+
+#Store line variable.py..
+file = open("Text.txt")
+a=file.readline()
+b=file.readline()
+print(a,b)
+
+
+#Text copy.txt...
+Hello this is J.D.Teja sai 
+B4 section, CSE
+GITAM UNIVERSITY
+Banglore
+
+Text.txt...
+Hello this is J.D.Teja sai 
+B4 section, CSE
+GITAM UNIVERSITY
+Banglore
