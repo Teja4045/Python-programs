@@ -1,5 +1,0 @@
-file = open("Text.txt","a")
-file.write("1st Year")
-file.close()
-file1 = open("Text.txt","r")
-print(file1.read())
